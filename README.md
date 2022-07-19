@@ -51,3 +51,22 @@ git status
 '''
 git log
 '''
+
+## Creating conda environment
+'''
+conda create -p venv python==3.7 -y
+'''
+
+# activate conda environment
+'''
+conda activate venv/
+'''
+OR
+'''
+conda activate venv
+'''
+
+# To install flask
+'''
+pip install -r requirements.txt
+'''

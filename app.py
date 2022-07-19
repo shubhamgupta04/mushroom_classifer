@@ -2,7 +2,6 @@
 
 import pickle
 from flask import Flask, request
-import numpy as np
 
 app = Flask(__name__)
 
@@ -82,3 +81,6 @@ data = {
 r=requests.post(url, json=data)
 print(r)
 print(r.text)
+
+#if __name__ == '__main__':
+#        app.run(debug=True)
