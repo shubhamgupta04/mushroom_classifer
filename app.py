@@ -47,11 +47,11 @@ def api_predict():
                 prediction = classifier_model.predict(input1)
                 return str(prediction)
 
-app.run()
+if __name__ == '__main__':
+        app.run(debug=True)
 
 
-
-import requests
+"""import requests
 url = "http://localhost:5000/mushrooms_predict"
 data = {
     'cap-shape' : 4,
@@ -80,7 +80,4 @@ data = {
 
 r=requests.post(url, json=data)
 print(r)
-print(r.text)
-
-#if __name__ == '__main__':
-#        app.run(debug=True)
+print(r.text)"""
