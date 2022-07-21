@@ -100,8 +100,19 @@ docker ps
 '''
 docker stop <container_id>
 '''
+
+# To install requirements/flask
+'''
+pip install -r requirements.txt
+'''
+
+# To install all requirements.txt in setup file
 '''
 python setup.py install
+'''
+or 
+'''
+pip install -e .
 '''
 
 '''
@@ -112,3 +123,7 @@ When your dataset stats gets change we call it as data drift.
 """
 pip install evidently
 """
+
+## to check Heroku cli logs using cmd
+heroku login
+heroku logs --app <heroku app name>
